@@ -1,0 +1,297 @@
+body {
+    margin: 0;
+}
+
+header {
+    height: 80px;
+    width: absolute;
+    padding: 10px;
+    box-shadow: 2px 2px 4px 0px lightgray;
+    z-index: 10;
+}
+
+header:hover {
+    box-shadow:none;
+    border-bottom: 5px solid transparent;
+    border-image: linear-gradient(to right, red, yellow) 10;
+    transition: 0.3s;
+}
+
+h1 a{
+    float: left;
+    margin-left: 10px;
+    font-family: "Water Brush";
+    font-size: 28pt;
+    text-decoration: none;
+    color: black;
+    text-shadow: -1px 0 lightgray, 0 1px lightgray, 1px 0 lightgray, 0 -1px lightgray;
+}
+
+ul {
+    list-style-type:none;
+}
+
+li a {
+    position: fixed;
+    top: 4%;
+    right: 5vh;
+    float: right;
+    padding: 16px 25px;
+    background-color: rgb(239, 239, 239);
+    color: black;
+    font-family: "Trispace";
+    font-variant: small-caps;
+    font-style: bold;
+    font-size: 12pt;
+    list-style-type: none;
+    text-decoration: none;
+    border: 2px solid black;
+    border-bottom: 4px solid black;
+    border-right: 4px solid black;
+    z-index: 10;
+}
+
+li a:hover {
+    background-color: black;
+    color: white;
+    border: 4px solid transparent;
+    border-image: linear-gradient(to right, rgb(255, 0, 128),red, yellow) 10;
+    transition: background-color 0.5s, text 0.5s;
+}
+
+.a {
+    margin: 5%;
+    padding: 5px;
+    width: 90%;
+    height: 100vh;
+    background-color: rgb(239, 239, 239);
+    border-radius: 30px;
+}
+
+h2 {
+    margin-left: 50px;
+    color: black;
+    font-family: "Water Brush";
+    font-size: 30pt;
+}
+
+.a1 {
+    position: relative;
+    margin-left: 50px;
+    background-color: lightgray;
+    height: 70vh;
+    width: 90%;
+}
+
+.imgholder {
+    position: relative;
+    margin-left: 5vh;
+    top: 5vh;
+    height: 60vh;
+    width: 93%;
+    display: flex;
+    overflow: scroll;
+    overflow-y:hidden;
+}
+
+.imgholder::-webkit-scrollbar {
+    height: 0.5vh;
+    z-index: 1;
+}
+
+.imgholder::-webkit-scrollbar-track {
+    background-color: lightgray;
+}
+
+.imgholder::-webkit-scrollbar-thumb {
+    background-color: rgb(161, 161, 161);
+    border-radius: 10px;
+    border: 3px solid transparent;
+    border-image: linear-gradient(to right, red, yellow) 20;
+}
+
+.imgholder img {
+    margin: 5px;
+    width: 55.5vh;
+    border: 8px solid white;
+}
+
+.imgholder a {
+    margin-right: 5vh;
+}
+
+.imgoverlay {
+    position: absolute;
+    top: 2.2vh;
+    left: 2.1vh;
+    width: 5.6vh;
+    height: 5.6vh;
+    padding: 25vh;
+    background-color: black;
+    opacity: 0;
+}
+
+.imgoverlay p {
+    transform: translate(-10vh, -12vh);
+    color: white;
+    font-family: "Trispace";
+    font-size: 25pt; 
+}
+
+.imgoverlay2 {
+    position: absolute;
+    top: 2.2vh;
+    left: 67.1vh;
+    width: 5.6vh;
+    height: 5.6vh;
+    padding: 25vh;
+    background-color: black;
+    opacity: 0;
+}
+
+.imgoverlay2 p {
+    transform: translate(-8vh, -10vh);
+    color: white;
+    font-family: "Trispace";
+    font-size: 25pt; 
+}
+
+.imgoverlay3 {
+    position: absolute;
+    top: 2.2vh;
+    left: 131.9vh;
+    width: 28.5vh;
+    height: 5.7vh;
+    padding: 25vh;
+    background-color: black;
+    opacity: 0;
+}
+
+.imgoverlay3 p {
+    transform: translate(0vh, -5vh);
+    color: white;
+    font-family: "Trispace";
+    font-size: 25pt; 
+}
+
+.imga1:hover .imgoverlay{
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.imga2:hover .imgoverlay2 {
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.imga3:hover .imgoverlay3 {
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.b {
+    margin: 0;
+    height: 100vh;
+    width: 96%;
+    padding: 25px;
+    background-color: black;
+    border-radius: 0;
+}
+
+.b1 {
+    position: relative;
+    left: 12vh;
+    width: 80%;
+    height: 50vh;
+    background-color: white;
+}
+
+h3 {
+    margin-left: 100px;
+    color: white;
+    font-family: "Water Brush";
+    font-size: 35pt;
+}
+
+.b a {
+    float: right;
+    margin-right: 50px;
+    transform: translateY(100px);
+    color: white;
+    font-family: "Trispace";
+    text-decoration: none;
+}
+
+.b a:hover {
+    font-size: 12.3pt;
+    transition: 0.2s;
+}
+
+.c {
+    width: 92%;
+    height: 100vh;
+    padding: 50px;
+    background-color: white;
+}
+
+.c1 {
+    position: relative;
+    width: 90%;
+    height: 50vh;
+    background-color: black;
+}
+
+h4 {
+    font-family: "Water Brush";
+    font-size: 35pt;
+}
+
+.c a {
+    float: right;
+    margin-right: 50px;
+    transform: translateY(100px);
+    color: black;
+    font-family: "Trispace";
+    text-decoration: none;
+}
+
+.c a:hover {
+    font-size: 12.3pt;
+    transition: 0.2s;
+}
+
+footer {
+    margin: 0;
+    width: absolute;
+    height: 50vh;
+    background-color: black;
+    border-top: 3px solid black;
+}
+
+footer:hover {
+    border-top: 8px solid transparent;
+    border-image: linear-gradient(to right, red, yellow) 10;
+    transition: 0.5s;
+}
+
+footer p {
+    margin-left: 25px;
+    color: white;
+    font-family: Tahoma, sans-serif;
+}
+
+footer a {
+    color: white;
+}
+
+.cc {
+    margin: 25px;
+}
+
+.cclogo {
+    position: relative;
+    bottom: 0;
+    margin-left: 25px;
+    transform: translateY(10vh);
+    width: 35px;
+}
