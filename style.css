@@ -383,7 +383,7 @@ footer p {
     .c1{width: 100%}
     h3{margin-left: 0;}
     #aimg {width: 100%; height: auto}
-    .imgholder{overflow-y: scroll; overflow-x: hidden; display: inline-block; width: 85%; height: 90%; margin-left: 5vh}
+    .imgholder{overflow-y: scroll; overflow-x: hidden; display: inline-block; width: 90%; height: 90%; margin-left: 3vh}
     .imgholder img{width: 100%; height: auto; margin: 0; margin-right: 0}
     .imga1:hover .imgoverlay {opacity: 0}
     .imga2:hover .imgoverlay2{opacity: 0}
@@ -397,4 +397,36 @@ footer p {
         50% {border-image: linear-gradient(to right, red, yellow, red) 100}
         100% {border-image: linear-gradient(to right, red, yellow) 10}
     }
+}
+
+@media only screen and (max-height: 450px) {
+    .a {height: 110vh}
+    .a1 {margin-left: 10vh}
+    .b a{transform: translateY(35px)}
+    .b{height: 130vh}
+    .c a{transform: translateY(35px)}
+    .c{height: 140vh}
+    footer {height: 65vh}
+    .social{transform: translateY(-400%)}
+}
+/*iPhone XR*/
+@media only screen and (height: 896px) and (width: 414px) {
+    li a{top: 3vh}
+    .b{height: 90vh}
+    .c{height: 100vh}
+    footer{height: 40vh}
+}
+/*iPhone 12 Pro*/
+@media only screen and (height: 844px) and (width: 390px) {
+    li a{top: 3vh}
+    .b{height: 90vh}
+    .c{height: 100vh}
+    footer{height: 40vh}
+}
+/*iPhone 14 Pro Max*/
+@media only screen and (height: 932px) and (width: 430px) {
+    li a{top: 3vh}
+    .b{height: 90vh}
+    .c{height: 100vh}
+    footer{height: 40vh}
 }
