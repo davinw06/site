@@ -91,7 +91,7 @@ h2 {
     width: 90%;
 }
 
-.imga3 img {
+#aimg {
     width: 78.5vh;
 }
 
@@ -132,12 +132,17 @@ h2 {
     margin-right: 5vh;
 }
 
+.container {
+    position: relative;
+    width: 100%;
+}
+
 .imgoverlay {
     position: absolute;
-    top: 2.2vh;
-    left: 2.1vh;
-    width: 5.6vh;
-    height: 5.6vh;
+    top: 13px;
+    left: 13px;
+    width: 9.1%;
+    height: 9.1%;
     padding: 25vh;
     background-color: black;
     opacity: 0;
@@ -147,15 +152,15 @@ h2 {
     transform: translate(-10vh, -12vh);
     color: white;
     font-family: "Trispace";
-    font-size: 25pt; 
+    font-size: 6vh; 
 }
 
 .imgoverlay2 {
     position: absolute;
-    top: 2.2vh;
-    left: 67.1vh;
-    width: 5.6vh;
-    height: 5.6vh;
+    top: 13px;
+    left: 13px;
+    width: 9.1%;
+    height: 9.1%;
     padding: 25vh;
     background-color: black;
     opacity: 0;
@@ -165,15 +170,15 @@ h2 {
     transform: translate(-8vh, -10vh);
     color: white;
     font-family: "Trispace";
-    font-size: 25pt; 
+    font-size: 6vh; 
 }
 
 .imgoverlay3 {
     position: absolute;
-    top: 2.2vh;
-    left: 131.9vh;
-    width: 28.5vh;
-    height: 5.7vh;
+    top: 13px;
+    left: 13px;
+    width: 34.3%;
+    height: 9.1%;
     padding: 25vh;
     background-color: black;
     opacity: 0;
@@ -183,7 +188,7 @@ h2 {
     transform: translate(0vh, -5vh);
     color: white;
     font-family: "Trispace";
-    font-size: 25pt; 
+    font-size: 6vh; 
 }
 
 .imga1:hover .imgoverlay{
@@ -192,12 +197,12 @@ h2 {
 }
 
 .imga2:hover .imgoverlay2 {
-    opacity: 0.8;
+    opacity: 0.9;
     transition: 0.3s;
 }
 
 .imga3:hover .imgoverlay3 {
-    opacity: 0.8;
+    opacity: 0.9;
     transition: 0.3s;
 }
 
@@ -343,32 +348,17 @@ footer p {
     text-shadow: -1px 0 lightgray, 0 1px lightgray, 1px 0 lightgray, 0 -1px lightgray;
 }
 
-@media only screen and (max-width: 200vh) {
-    .name{transform: translate(65%,70%)}
-    .ftlogo{transform: translate(425%, 0%)}
-    .cclogo{transform: translateY(3vh)}
-    .c a{transform: translateY(75px)}
-    .b a{transform: translateY(25px)}
-    .imgoverlay{top:2.6vh; left:2.6vh}
-    .imgoverlay2{top:2.6vh; left:68.3vh}
-    .imgoverlay3{top:2.6vh; left: 133.8vh}
-}
 
-@media only screen and (max-height: 560px) {
+
+@media only screen and (max-height: 580px) {
     .name{transform: translate(65%,20%)}
     .ftlogo{transform: translate(425%, -50%)}
     .cclogo{transform: translateY(1vh)}
     .social {transform: translateY(-30vh)}
     .c a{transform: translateY(75px)}
-    .c {height: 130vh}
+    .c {height: 130vh; margin-bottom: 5vh}
     .b{height: 120vh}
-}
-
-
-@media only screen and (max-height: 600px) {
-    .imgoverlay{top:2.3vh; left:2.3vh}
-    .imgoverlay2{top:2.3vh; left:67.3vh}
-    .imgoverlay3{top:2.3vh; left: 132.53vh}
+    footer{height: 60vh}
 }
 
 @media only screen and (height: 720px) {
@@ -376,10 +366,7 @@ footer p {
     .b a{transform: translateY(100px)}
     .social{transform: translateY(-20vh)}
     .c {height: 105vh}
-    footer{height: 35vh}
-    .imgoverlay{top:1.7vh; left:1.7vh}
-    .imgoverlay2{top:1.7vh; left:65.8vh}
-    .imgoverlay3{top:1.7vh; left: 130vh}
+    footer{height: 45vh}
 }
 
 @media only screen and (max-width: 450px) {
@@ -393,7 +380,7 @@ footer p {
     .c a{font-size: 15pt}
     .c1{width: 100%}
     h3{margin-left: 0;}
-    .imga3 img {width: 20vh; height: auto;}
+    #aimg {width: 100%; height: auto}
     .imgholder{overflow-y: scroll; overflow-x: hidden; display: inline-block; width: 85%; height: 90%; margin-left: 5vh}
     .imgholder img{width: 100%; height: auto; margin: 0; margin-right: 0}
     .imga1:hover .imgoverlay {opacity: 0}
@@ -402,6 +389,7 @@ footer p {
     footer {width: 106%}
     footer img {width: 50%}
     .social{transform: translateY(-300%)}
+    .ftlogo{transform: translate(425%, -10%)}
     @keyframes gradient {
         0% {border-image: linear-gradient(to right, yellow, red) 10}
         50% {border-image: linear-gradient(to right, red, yellow, red) 100}
