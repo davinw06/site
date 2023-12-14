@@ -284,7 +284,7 @@ h4 {
 footer {
     margin: 0;
     width: absolute;
-    height: 51vh;
+    height: 56vh;
     background-color: black;
     border-top: 3px solid black;
     box-sizing: border-box;
@@ -406,7 +406,7 @@ footer p {
     .b{height: 130vh}
     .c a{transform: translateY(35px)}
     .c{height: 140vh}
-    footer {height: 65vh}
+    footer {height: 90vh}
     .social{transform: translateY(-400%)}
 }
 /*iPhone XR*/
